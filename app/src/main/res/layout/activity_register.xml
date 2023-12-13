@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleHeaderApp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="ecogreen"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/titleApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#25753C"
+            android:layout_marginTop="60dp"/>
+
+        <!--TextView
+            android:id="@+id/labelRegName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="40dp" /-->
+
+        <EditText
+            android:id="@+id/inputRegName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f6f6f6"
+            android:layout_marginTop="30sp"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <!--TextView
+            android:id="@+id/labelRegLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" /-->
+
+        <EditText
+            android:id="@+id/inputRegLastName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="Apellido"
+            android:background="#f6f6f6" />
+        <EditText
+            android:id="@+id/inputRegNickName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="Nickname"
+            android:background="#f6f6f6" />
+        <!--TextView
+            android:id="@+id/labelRegMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" /-->
+
+        <EditText
+            android:id="@+id/inputRegMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="Correo"
+            android:background="#f6f6f6"
+            />
+
+        <!--TextView
+            android:id="@+id/labelRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp" /-->
+
+        <EditText
+            android:id="@+id/inputRepRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f6f6f6"
+            android:hint="Contraseña"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <!--TextView
+            android:id="@+id/labelRegRepPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repetir Contraseña"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp" /-->
+
+        <EditText
+            android:id="@+id/inputRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f6f6f6"
+            android:layout_marginTop="5dp"
+            android:hint="Repetir Contraseña"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef">
+
+            <CheckBox
+                android:id="@+id/checkBoxTerminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto terminos y condiciones" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Acepto tratamiento de datos" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnRecRegister"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:background="#96C78A"
+            android:text="Registrar y volver"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
